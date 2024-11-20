@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouquet Gallery</title>
+    <title>About Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* General styles */
+        /* General Styles */
         body {
-            margin: 0;
             font-family: 'Playfair Display', serif;
-            color: #333;
+            margin: 0;
             background-color: #f9f9f9;
+            color: #333;
             line-height: 1.6;
         }
 
+        /* Navbar */
         .navbar {
             background-color: #3A4528;
             display: flex;
@@ -24,87 +25,150 @@
             padding: 20px;
             gap: 60px;
         }
-
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 60px;
+        }
         .navbar a {
             color: white;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
         }
-
         .navbar a:hover {
             color: #8F9779;
             text-decoration: underline;
         }
 
-        header {
+        /* About Us Section */
+        .about-section {
+            background-image: url('bg_1.jpeg');
+            background-position: center;
+            color: black;
             text-align: center;
-            padding: 30px 20px;
-            background-color: #3A4528; /* Olive green */
-            color: white;
+            padding: 80px 20px;
         }
-
-        .title {
-            font-size: 36px;
-            margin: 0;
+        .about-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
         }
-
-        .subtitle {
-            font-size: 18px;
-            margin: 5px 0 20px;
-            color: #D4AF37; /* Gold */
-        }
-
-        /* Gallery grid */
-        .gallery {
-            display: grid;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
+        .about-section p {
+            font-size: 20px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
-        .flower-card {
+        /* Mission Statement */
+        .mission {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('background_2.jpeg');
+        }
+        .mission h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #3A4528;
+        }
+        .mission p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Team Section */
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e8e8e8;
+          
+        }
+        .team-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+          margin-top: 10px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .team-member {
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            width: 250px;
             text-align: center;
-            padding: 15px;
+          
         }
-
-        .flower-image {
-            width: 95%;
-            height: 400px;
+        .team-member img {
+            width: 100%;
+            height: 300px;
             object-fit: cover;
-            border-bottom: 2px solid #3A4528;
         }
-
-        .bouquet-name {
+        .team-member h3 {
             font-size: 20px;
             margin: 15px 0 5px;
-            color: #3A4528;
         }
-
-        .bouquet-description {
+        .team-member p {
             font-size: 14px;
-            color: #666;
-            padding: 0 10px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="bouquet.html">Bouquet Gallery</a></li>
-        <li><a href="plants.html">Plant Gallery</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="bouquet.html">Bouquet Gallery</a></li>
+            <li><a href="plants.html">Plant Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
-<div class="content">
-    <h1>About Us</h1>
-    <p>Learn more about our mission to bring beautiful flowers and plants into your life.</p>
+
+    <div class="about-section">
+        <h1>About Enchanted Florals</h1>
+        <p>At Enchanted Florals, we believe in the beauty of nature and the joy it brings to everyday life. Our passion is creating beautiful bouquets and plant arrangements that brighten your day and your space.</p>
+    </div>
+
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p> To bring a sort of elegance and serenity of nature into your every home through beautifully curated floral designs and personalized customer service.</p>
+    </div>
+
+ <div class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+        <div class="team-member">
+            <img src="person1.jpeg" alt="Team Member 1">
+            <h3>Claudia Collier</h3>
+            <p>Founder & Lead Designer</p>
+        </div>
+        <div class="team-member">
+            <img src="person2.jpeg" alt="Team Member 2">
+            <h3>Pablo Harvey</h3>
+            <p>Plant Care Specialist</p>
+        </div>
+        <div class="team-member">
+            <img src="person3.jpeg" alt="Team Member 3">
+            <h3>Sallie Hodges</h3>
+            <p>Customer Relations Manager</p>
+        </div>
+
+      <div class="team-member">
+            <img src="creepy_rando.jpeg" alt="Team Member 4">
+            <h3>Timmy Tim</h3>
+            <p>Creative Marketing Specialist</p>
+        </div>
+    </div>
 </div>
 
-</body>
+  </body>
 </html>
