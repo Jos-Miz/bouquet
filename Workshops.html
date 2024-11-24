@@ -38,7 +38,6 @@
         }
 
       
-      
       .workshop-section {
             background-image: url('bg_1.jpeg');
             background-position: center;
@@ -57,13 +56,12 @@
             max-width: 800px;
             margin: 0 auto;
            
-        }
-      
+        } 
 
     .gallery-wrapper {
             background-image: url('background_2.jpeg');
             padding: 20px 0;
-}
+        }
 
       
 .gallery {
@@ -73,26 +71,26 @@
     max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-image: url('background_2.jpeg');
+  
 
 }
 
         .flower-card {
             background: white;
-            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             padding: 15px;
-          
+            border-radius: 10px;     
         }
 
         .flower-image {
             width: 95%;
             height: 400px;
             object-fit: cover;
-            border-bottom: 2px solid #3A4528;
+            border-radius: 10px;
+
         }
 
         .bouquet-name {
@@ -121,49 +119,57 @@
 
         }
       
+            
+/* 
+Code copied from: [https://www.w3schools.com/css/tryit.asp?filename=trycss_forms]
+Author: [W3 Schools]
+Name: ["Using CSS to style an HTML Form"]
+Description: [Taught me how to style forms using CSS]
+Date retrieved: [20 Nov, 2024]
+*/
       
       input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 17px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-      
-      
-input[type="submit"], input[type="reset"] {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  background-color: #3A4528;
-  color: #fff;
-}
-      
-      
-input[type="submit"] {
-  background: #3A4528;
-  color: #fff;
-}
-      
-input[type="submit"]:hover {
-  background-color: #8F9779;
-}
-      
-input[type="reset"] {
-  background-color: #B5B5B5;
-}
-      
-input[type="reset"]:hover {
-  background-color: #C9C9C9;
-}
+        width: 100%;
+        padding: 10px;
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
 
-      .button-container {
-  display: flex;
-}
+
+      input[type="submit"], input[type="reset"] {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #3A4528;
+        color: #fff;
+      }
+
+
+      input[type="submit"] {
+        background: #3A4528;
+        color: #fff;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #8F9779;
+      }
+
+      input[type="reset"] {
+        background-color: #B5B5B5;
+      }
+
+      input[type="reset"]:hover {
+        background-color: #C9C9C9;
+      }
+
+            .button-container {
+        display: flex;
+      }
       
       table {
         font-family: 'Playfair Display', serif;
@@ -269,6 +275,7 @@ input[type="reset"]:hover {
             </tr>
         </table>
       </div>
+      
       
          <div class="form-container">
         <form action="index.php" method="POST">
